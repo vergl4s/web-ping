@@ -13,11 +13,11 @@ def main():
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-u', '--url', action='store', dest='url', required=True, help='URL to ping')
-    parser.add_argument('-i', '--interval', action='store', dest='i', default='5', required=False, help='Interval between pings in seconds')
+    parser.add_argument('-i', '--interval', action='store', dest='interval', default='5', required=False, help='Interval between pings in seconds')
     args = parser.parse_args()
 
     url = args.url
-    interval = int(args.i)
+    interval = int(args.interval)
 
     port = 80
     hostname = ''
